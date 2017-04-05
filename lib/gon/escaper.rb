@@ -31,7 +31,7 @@ class Gon
       private
 
       def escape_line_separator(javascript)
-        javascript.gsub(/\\u2028/u, '&#x2028;')
+        javascript.gsub(/\\u2028/u, '&#x2028;').gsub("\u2028", '&#x2028;')
       end
 
     end
